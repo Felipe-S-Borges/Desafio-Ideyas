@@ -32,6 +32,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'home.apps.HomeConfig',
+    'triangulos.apps.TriangulosConfig',
     'cadastro.apps.CadastroConfig',
     'django.contrib.admin',
     'django.contrib.auth',
