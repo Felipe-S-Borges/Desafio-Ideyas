@@ -4,4 +4,4 @@ from django.http import HttpResponse
 
 # Create your views here.
 def index(request):
-    return HttpResponse('Triangulos app')
+    return render(request,'triangulos/index.html')
