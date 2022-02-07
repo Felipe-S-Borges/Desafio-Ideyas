@@ -1,1 +1,33 @@
-<h1>Cadastro test</h1>
+{% load static %}
+
+<!doctype html>
+
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cadastro | Lista amiga</title>
+  <link rel="stylesheet" href="{% static 'css/cadastro.css' %}">
+</head>
+
+<body>
+    <h1>Lista amiga</h1>
+    <div>
+        <button>Adicionar</button>
+    </div>
+    <table>
+        <tr>
+            <th>Nome</th>
+            <th>idade</th>
+            <th>Telefone</th>
+            <th>Identidade</th>
+        </tr>
+        <tr>
+            <td>Nome</td>
+            <td>idade</td>
+            <td>Telefone</td>
+            <td>Identidade</td>
+        </tr>
+    </table>
+</body>
+</html>
