@@ -11,9 +11,27 @@
 </head>
 
 <body>
-    <h1>Lista amiga</h1>
+    <div class="header">
+        <h1>Lista amiga</h1>
+        <button id="adicionarAmigo">+ Adicionar</button>
+    </div>
     <div>
-        <button>Adicionar</button>
+        
+    </div>
+    <div id="modalCadastro" class="modal">
+        <div class="modalContainer">
+            <div class="header">
+                <h3>Cadastro de amigos</h3>
+                <button id="fecharModal">X</button>
+            </div>
+            <form action="">
+                <input type="text" name="nome" placeholder="Nome do amiguinho" required>
+                <input type="number" name="idade" placeholder="Qual a idade dele" required>
+                <input type="tel" name="telefone" placeholder="Contatinho" required>
+                <input type="number" name="documento" placeholder="CPF ou RG" required>
+                <input class="submit" type="submit" value="Adicionar amiguinho" onclick="insertOnTable()" required>
+            </form>
+        </div>
     </div>
     <table>
         <tr>
@@ -29,5 +47,6 @@
             <td>Identidade</td>
         </tr>
     </table>
+    <script src="{% static 'js/scripts.js' %}"></script>
 </body>
 </html>
