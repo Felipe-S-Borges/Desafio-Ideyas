@@ -11,42 +11,57 @@
 </head>
 
 <body>
-    <div class="header">
-        <h1>Lista amiga</h1>
-        <button id="adicionarAmigo">+ Adicionar</button>
-    </div>
-    <div>
-        
-    </div>
-    <div id="modalCadastro" class="modal">
-        <div class="modalContainer">
-            <div class="header">
-                <h3>Cadastro de amigos</h3>
-                <button id="fecharModal">X</button>
-            </div>
-            <form action="">
-                <input type="text" name="nome" placeholder="Nome do amiguinho" required>
-                <input type="number" name="idade" placeholder="Qual a idade dele" required>
-                <input type="tel" name="telefone" placeholder="Contatinho" required>
-                <input type="number" name="documento" placeholder="CPF ou RG" required>
-                <input class="submit" type="submit" value="Adicionar amiguinho" onclick="insertOnTable()" required>
-            </form>
+    <div class="container">
+        <div class="header">
+            <h1>Lista amiga | Babylon Club</h1>
+            <button id="adicionarAmigo">+ Adicionar</button>
         </div>
+        <div>
+            
+        </div>
+        <div id="modalCadastro" class="modal">
+            <div class="modalContainer">
+                <div class="header">
+                    <h3>Cadastro de amigos</h3>
+                    <button id="fecharModal">X</button>
+                </div>
+                <form action="">
+                    <input type="text" name="nome" placeholder="Nome do amiguinho" required>
+                    <input type="number" name="idade" placeholder="Qual a idade dele" required>
+                    <input type="tel" name="telefone" placeholder="Contatinho" required>
+                    <input type="number" name="documento" placeholder="CPF ou RG" required>
+                    <input class="submit" type="submit" value="Adicionar amiguinho" onclick="insertOnTable()" required>
+                </form>
+            </div>
+        </div>
+        <table>
+            <tr>
+                <th>Nome</th>
+                <th>idade</th>
+                <th>Telefone</th>
+                <th>Identidade</th>
+            </tr>
+            <tr>
+                <td>Nome</td>
+                <td>idade</td>
+                <td>Telefone</td>
+                <td>Identidade</td>
+            </tr>
+            <tr>
+                <td>Nome</td>
+                <td>idade</td>
+                <td>Telefone</td>
+                <td>Identidade</td>
+            </tr>
+            <tr>
+                <td>Nome</td>
+                <td>idade</td>
+                <td>Telefone</td>
+                <td>Identidade</td>
+            </tr>
+        </table>
     </div>
-    <table>
-        <tr>
-            <th>Nome</th>
-            <th>idade</th>
-            <th>Telefone</th>
-            <th>Identidade</th>
-        </tr>
-        <tr>
-            <td>Nome</td>
-            <td>idade</td>
-            <td>Telefone</td>
-            <td>Identidade</td>
-        </tr>
-    </table>
+    
     <script src="{% static 'js/scripts.js' %}"></script>
 </body>
 </html>
