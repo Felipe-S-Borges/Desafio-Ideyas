@@ -1,12 +1,3 @@
-
-
-const tempAmigo = {
-    nome: "Alice",
-    idade:"33",
-    telefone: "27 89562 5522",
-    documento:"RG 56226856"
-}
-
 const addAmigo = (amigo) => {
     const db_amigo = JSON.parse(localStorage.getItem('db_amigo')) ?? []
     db_amigo.push(amigo)
