@@ -100,7 +100,7 @@ table th{
     text-transform: uppercase;
     padding: 0.375rem 0;
 }
-table tr:nth-child(3n){
+table tr:nth-child(2n){
     background: var(--nthRow);
 }
 table td{

@@ -26,39 +26,33 @@
                     <button id="fecharModal">X</button>
                 </div>
                 <form action="">
-                    <input type="text" name="nome" placeholder="Nome do amiguinho" required>
-                    <input type="number" name="idade" placeholder="Qual a idade dele" required>
-                    <input type="tel" name="telefone" placeholder="Contatinho" required>
-                    <input type="number" name="documento" placeholder="CPF ou RG" required>
-                    <input class="submit" type="submit" value="Adicionar amiguinho" onclick="insertOnTable()" required>
+                    <input id="nome" type="text" name="nome" placeholder="Nome do amiguinho" required>
+                    <input id="idade" type="number" name="idade" placeholder="Qual a idade dele" required>
+                    <input id="telefone" type="tel" name="telefone" placeholder="Contatinho" required>
+                    <input id="documento" type="number" name="documento" placeholder="CPF ou RG" required>
+                    <input id="salvar" class="submit" type="submit" value="Adicionar amiguinho">
                 </form>
             </div>
         </div>
-        <table>
-            <tr>
+        <table id="listaAmiga">
+            <thead>
                 <th>Nome</th>
                 <th>idade</th>
                 <th>Telefone</th>
                 <th>Identidade</th>
-            </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+            <!--
             <tr>
                 <td>Nome</td>
                 <td>idade</td>
                 <td>Telefone</td>
                 <td>Identidade</td>
             </tr>
-            <tr>
-                <td>Nome</td>
-                <td>idade</td>
-                <td>Telefone</td>
-                <td>Identidade</td>
-            </tr>
-            <tr>
-                <td>Nome</td>
-                <td>idade</td>
-                <td>Telefone</td>
-                <td>Identidade</td>
-            </tr>
+            -->
+          
         </table>
     </div>
     
