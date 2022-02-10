@@ -1,1 +1,21 @@
-<h1>Template home config</h1>
+{% load static %}
+
+<!doctype html>
+
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home</title>
+  <link rel="stylesheet" href="{% static 'css/home.css' %}">
+</head>
+
+<body>
+    <a href="/cadastro/">Cadastro</a>
+    <a href="/triangulos/">Cadastro</a>
+    <a href="/home/desafio">Cadastro</a>
+
+    <script src="{% static 'js/homeScripts.js' %}"></script>
+    
+</body>
+</html>
