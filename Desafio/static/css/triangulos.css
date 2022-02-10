@@ -1,0 +1,35 @@
+body{
+    background: #DAD299; 
+    background: -webkit-linear-gradient(to left, #B0DAB9, #DAD299); 
+    background: linear-gradient(to left, #B0DAB9, #DAD299); 
+
+    
+}
+.header h1{
+    text-align: center;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 2rem;
+    border-radius: 10pt;
+    margin: auto;
+    border: 1pt solid violet;
+    width: 60%;
+}
+.container input{
+    width: 50%;
+    margin: auto;
+    margin-bottom: 1rem;
+    height: 2rem;
+}
+
+#enviar{
+    background: greenyellow;
+    border-radius: 5px;
+}
+#resultado h3{
+    text-align: center;
+    font-size: 1.6rem;
+    color: rgb(29, 48, 1);
+}

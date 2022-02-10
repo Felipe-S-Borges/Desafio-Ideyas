@@ -1,1 +1,34 @@
-<h1>Teste template triangulos</h1>
+{% load static %}
+
+<!doctype html>
+
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home</title>
+  <link rel="stylesheet" href="{% static 'css/triangulos.css' %}">
+
+</head>
+
+<body>
+    <div class="header">
+        <h1>Quê triangulo é esse?</h1>
+    </div>
+    
+
+    <div class="container">
+        <div id="resultado" >
+            <h3> ???</h3>
+        </div>
+        <input id="ladoUm" type="number" placeholder="Lado 1">
+        <input id="ladoDois" type="number" placeholder="Lado 2">
+        <input id="ladoTres" type="number" placeholder="Lado 3">
+        <input id="enviar" type="submit" value="Verificar">
+    </div>
+    
+
+    <script src="{% static 'js/triangulos.js' %}"></script>
+    
+</body>
+</html>
