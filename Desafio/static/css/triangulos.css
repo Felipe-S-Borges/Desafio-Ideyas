@@ -33,3 +33,24 @@ body{
     font-size: 1.6rem;
     color: rgb(29, 48, 1);
 }
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+footer a{
+    text-decoration: none;
+    color: rgb(128, 163, 3);
+    font-weight: 600;
+    font-size: 1.35rem;
+    border: 1pt solid rgb(128, 163, 3);
+    border-radius: 5pt;
+    padding: 0.3rem 0.6rem;
+}
+
+footer a:hover{
+    color: rgb(248, 242, 169);
+}
