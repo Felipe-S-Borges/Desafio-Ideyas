@@ -18,11 +18,11 @@ const verificarTriangulo = () =>{
 
     if(triangulo.ladoUm == triangulo.ladoDois && triangulo.ladoDois == triangulo.ladoTres){
         document.getElementById('resultado').innerHTML = `
-        <h3> Triangulo Equilatero</h3>
+        <h3> Triangulo Equilátero</h3>
         `
     }else if(triangulo.ladoUm == triangulo.ladoDois || triangulo.ladoUm == triangulo.ladoTres||triangulo.ladoDois == triangulo.ladoTres){
         document.getElementById('resultado').innerHTML = `
-        <h3> Triangulo Isoceles</h3>
+        <h3> Triangulo Isóceles</h3>
         `
     }else{
         document.getElementById('resultado').innerHTML = `
