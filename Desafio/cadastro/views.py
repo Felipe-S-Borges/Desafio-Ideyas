@@ -7,3 +7,8 @@ from django.http import HttpResponse
 
 def index(request):
     return render(request,'cadastro/index.html')
+
+
+def listaAmiga():
+
+    return 
