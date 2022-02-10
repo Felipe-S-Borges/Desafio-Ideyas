@@ -1,5 +1,5 @@
 # Desafio | Ideyas Innovation
-Desafio proposto pela Ideyas
+Desafio proposto pela Ideyas Innovation
 ## Guia de instalação
 
 1. Clone repository
