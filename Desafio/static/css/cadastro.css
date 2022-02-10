@@ -6,9 +6,13 @@ html{
     --buttonHover: rgb(213, 247, 162);
     --nthRow: rgb(247, 236, 242);
     --tableLine:pink;
+
+   
 }
 body{
-    background-color: var(--background);
+    background: #642B73; 
+    background: -webkit-linear-gradient(to right, #C6426E, #642B73); 
+    background: linear-gradient(to right, #C6426E, #642B73); 
 }
 .container{
     width: 80%;
@@ -46,7 +50,57 @@ body{
 }
 .header:first-child{
     background: var(--header);
+    background: rgba(41, 41, 41, 0.67);
+    border-radius: 5px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.7px);
+    -webkit-backdrop-filter: blur(9.7px);
+    border: 1px solid rgba(255, 255, 255, 0.29);
+    border: 0.2rem solid #fff;
+    border-radius: 5px;
+    padding: 0.4em 2rem;
+    box-shadow: 
+        0 0 .2rem #fff,
+        0 0 .2rem #fff,
+        0 0 2rem #bc13fe,
+        0 0 0.8rem #bc13fe,
+        0 0 2.8rem #bc13fe,
+        inset 0 0 1.3rem #bc13fe; 
 }
+
+.header:first-child h1{
+    animation: piscar 1.5s infinite alternate; 
+    color: #fff;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #f09,
+        0 0 82px #f09,
+        0 0 92px #f09,
+        0 0 102px #f09,
+        0 0 151px #f09;
+}
+
+@keyframes piscar {
+    
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+  
+        text-shadow:
+            0 0 4px #fff,
+            0 0 11px #fff,
+            0 0 19px #fff,
+            0 0 40px #f09,
+            0 0 80px #f09,
+            0 0 90px #f09,
+            0 0 100px #f09,
+            0 0 150px #f09;
+    }
+    
+    20%, 24%, 55% {        
+        text-shadow: none;
+    }    
+  }
 #adicionarAmigo{
     background: var(--buttonGreen);
     padding: 0.75rem 1rem;
@@ -92,10 +146,13 @@ table{
     width: 100%;
     margin-top: 1rem;
     border-collapse: collapse;
-    border-radius: 5pt;
+    background: rgba(255, 255, 255, 0.67);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.7px);
 }
 
 table th{
+    color: rgb(255, 242, 250);
     background: var(--header);
     text-transform: uppercase;
     padding: 0.375rem 0;
@@ -104,6 +161,7 @@ table tr:nth-child(2n){
     background: var(--nthRow);
 }
 table td{
+    color: rgb(49, 0, 29);
     text-align: center;
     padding: 0.375rem 0;
     border-bottom: 1pt solid var(--tableLine);
